@@ -20,15 +20,10 @@ h1{
 .Shouting {
     text-transform: uppercase;
 }
-marquee {
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  border-left: 
 }
 .transtext {
         background-image: linear-gradient(to left, cornflowerblue, lightpink, lightgrey, lightpink, cornflowerblue );
-                -webkit-background-clip: text;
+        -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
         color: transparent;
