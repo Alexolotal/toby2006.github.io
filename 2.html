@@ -1,0 +1,65 @@
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+body {
+  background-color: black;
+
+}
+p {
+  font-family: console, courier, "times new roman", times, serif;
+  color: DarkGreen;
+}
+h2 {
+    font-family: console, courier, "times new roman", times, serif;
+    color: DarkGreen;
+    text-align: center;
+}
+button {
+  align: center;
+  font-family: console, courier, "times new roman", times, serif;
+  color: DarkGreen;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.other-center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<h2>Computer diagnostics</h2>
+<div class=vertical-center>
+<button type="button" name="button" onclick="computerpower()">computer.power.status()</button>
+</div>
+<div class=center>
+<button type="button" name="button" onclick="computerfire()">computer.fire.status()</button>
+</div>
+<div class=other-center>
+  <button onclick="window.location='index.html';">Back Home</button>
+</div>
+<script>
+function computerpower() {
+  alert("It's on you dingbat");
+}
+function computerfire() {
+  alert("Probably not, temps read as < 1500 degrees celcius")
+}
+</script>
